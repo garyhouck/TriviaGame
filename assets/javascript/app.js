@@ -35,8 +35,26 @@ function run() {
   // create a stop function
   function stop() {
     clearInterval(intervalId); 
-    let score = $("#radio");
-      if (score + $(".true").checked) {
+    // let score = $("#radio");
+      if ($(".true1:checked")) {
+        correctAnswer ++;
+      } else {
+        wrongAnswer ++;
+        console.log(correctAnswer);
+      } console.log(wrongAnswer);
+      if ($(".true2:checked")) {
+        correctAnswer ++;
+      } else {
+        wrongAnswer ++;
+        console.log(correctAnswer);
+      } console.log(wrongAnswer);
+      if ($(".true3:checked")) {
+        correctAnswer ++;
+      } else {
+        wrongAnswer ++;
+        console.log(correctAnswer);
+      } console.log(wrongAnswer);
+      if ($(".true4:checked")) {
         correctAnswer ++;
       } else {
         wrongAnswer ++;
