@@ -21,40 +21,33 @@ function run() {
     startTime--;
     console.log(startTime);
     $("#timeLeft").html(startTime);
-     //  Once number hits zero...
     if (startTime === 0) {
-
-      //  ...run the stop function.
-      stop();
-
-      //  Alert the user that time is up.
-      alert("Time Up!");
-      
+      stop();   
     }
   }
   // create a stop function
   function stop() {
     clearInterval(intervalId); 
     // let score = $("#radio");
-      if ($(".true1:checked")) {
+      if ($(".true1:checked").val()) {
         correctAnswer ++;
       } else {
         wrongAnswer ++;
         console.log(correctAnswer);
       } console.log(wrongAnswer);
-      if ($(".true2:checked")) {
+      if ($(".true2:checked").val()) {
         correctAnswer ++;
       } else {
         wrongAnswer ++;
         console.log(correctAnswer);
       } console.log(wrongAnswer);
-      if ($(".true3:checked")) {
+      if ($(".true3:checked").val()) {
         correctAnswer ++;
       } else {
         wrongAnswer ++;
         console.log(correctAnswer);
       } console.log(wrongAnswer);
-      if ($(".true4:checked")) {
+      if ($(".true4:checked").val()) {
         correctAnswer ++;
       } else {
         wrongAnswer ++;
