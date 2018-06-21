@@ -35,20 +35,15 @@ function run() {
   // create a stop function
   function stop() {
     clearInterval(intervalId); 
-    
-      if ($(".true").checked) {
+    let score = $("#radio");
+      if (score + $(".true").checked) {
         correctAnswer ++;
       } else {
         wrongAnswer ++;
         console.log(correctAnswer);
-      } 
-    
+      } console.log(wrongAnswer);
+      $("#results").append("Correct Answers: " , correctAnswer, "<br>" , "Wrong answers: ", wrongAnswer);
   }
-
-  
-
-  // create a function and loop to check answers and add to right/wrong variables
-  
 
 
 });
