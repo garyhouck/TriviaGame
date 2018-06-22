@@ -2,7 +2,7 @@
 
 let correctAnswer = 0;
 let wrongAnswer = 0;
-let startTime = 60;
+let startTime = 30;
 let intervalId;
 
 $(document).ready(function() {
@@ -10,6 +10,7 @@ $(document).ready(function() {
 // set up click events 
 $("#start").on("click", run);
 $("#submit").on("click",stop);
+$("#restart").on("click",restart);
 // create function when start button is clicked  
 function run() {
     clearInterval(intervalId);
@@ -53,8 +54,10 @@ function run() {
         wrongAnswer ++;
         console.log(correctAnswer);
       } console.log(wrongAnswer);
-      $("#results").append("Correct Answers: " , correctAnswer, "<br>" , "Wrong answers: ", wrongAnswer);
+      $("#show").append("Correct Answers: " , correctAnswer, "<br>" , "Wrong answers: ", wrongAnswer);
   }
-
+function restart() {
+  location.reload();
+}
 
 });
