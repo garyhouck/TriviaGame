@@ -85,3 +85,11 @@ label {
 input {
 	transform: scale(1.5);
 }
+a {
+	color:yellow;
+}
+#github {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
